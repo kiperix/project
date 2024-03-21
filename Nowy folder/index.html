@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edytor Tekstu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <textarea id="poleTekstowe" class="pole-tekstowe" placeholder="Wpisz tekst tutaj..."></textarea>
+    <div class="narzedzia">
+      <input type="checkbox" id="divCheckbox"> <label for="divCheckbox">Div</label><br>
+      <input type="checkbox" id="pCheckbox"> <label for="pCheckbox">Paragraf</label><br>
+      <input type="checkbox" id="aCheckbox"> <label for="aCheckbox">Link</label><br>
+      <input type="checkbox" id="h1Checkbox"> <label for="h1Checkbox">Nagłówek 1</label><br>
+      <input type="checkbox" id="h2Checkbox"> <label for="h2Checkbox">Nagłówek 2</label><br>
+      <input type="checkbox" id="h3Checkbox"> <label for="h3Checkbox">Nagłówek 3</label><br>
+      <input type="checkbox" id="h4Checkbox"> <label for="h4Checkbox">Nagłówek 4</label><br>
+      <input type="checkbox" id="h5Checkbox"> <label for="h5Checkbox">Nagłówek 5</label><br>
+      <input type="checkbox" id="ulCheckbox"> <label for="ulCheckbox">Lista punktowana</label><br>
+      <input type="checkbox" id="olCheckbox"> <label for="olCheckbox">Lista numerowana</label><br>
+      <button id="addBtn" class="przycisk">Dodaj</button>
+      <button id="resetBtn" class="przycisk">Resetuj</button>
+    </div>
+    <div id="wynik" class="wynik"></div>
+  </div>
+  <div class="informacje">
+    <p><strong>Generator Tekstu </strong>- Gdy wprowadzisz tekst do ramki po lewej stronie, zaznacz go (CTRL+a) oraz kliknij w przycisk który ci odpowiada po czym kliknij dodaj. </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

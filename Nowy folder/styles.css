@@ -1,0 +1,74 @@
+body {
+  font-family: 'Segoe UI';
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px black;
+}
+
+.pole-tekstowe {
+  flex: 1;
+  margin-right: 20px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  overflow-y: auto;
+}
+
+.narzedzia {
+  flex: 0 0 150px;
+}
+
+.narzedzia input[type="checkbox"]:checked+label {
+  background-color: cornflowerblue;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Dodanie animacji */
+}
+
+.przycisk {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.przycisk:hover {
+  background-color: #0056b3;
+}
+
+.wynik {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.informacje {
+  margin-top: 20px;
+  text-align: center; 
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
